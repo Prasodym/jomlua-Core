@@ -1,0 +1,49 @@
+###############################
+# Plugin Jomlua Core Settings #
+###############################
+
+
+# Spawn location
+Spawn:
+  World: world
+  X: 0
+  Y: 64.0
+  Z: 0
+  Yaw: 0
+  Pitch: 0
+# Farmwelt teleport
+Farmwelt:
+  World: world
+  X: 0
+  Y: 64.0
+  Z: 0
+  Yaw: 0
+  Pitch: 0
+# Mysql verbindung für Spieler Stats
+# Coming soon
+#True if you want to limit how far it teleports players
+world-border: true
+#How many blocks away they CAN spawn(not will)
+border: 10000 #If no world border, limit is automatically 25,000 blocks
+#Amount homepoints
+homepoints: 3
+#Amount money Start copital
+start-money: 10000
+#Activate Shulker droprate
+shulker-drop-enable: false
+#Max shulker droprate
+shulker-drop-rate: 2
+server-motd:
+  - '&aI am usage JomluaCore'
+#Enabled Motd messages
+motd: true
+motd-msg:
+  - '&8&l|:::::::::::::::::::::::::::: &3&lJo&amlua &3&lVa&a&lnillaserver &8&l:::::::::::::::::::::::::::::>'
+  - '&8&l|'
+  - '&8&l|        &aWillkommen zurück, &l%PLAYER%!'
+  - '&8&l|        &bEs sind gerade &l%ONLINE% &bSpieler online.'
+  - '&8&l|        &7Hompage:     &ahttps://Jomlua.de/'
+  - '&8&l|        &7Teamspeak³: &ajomlua.de'
+  - '&8&l|        &7Discord:      &ahttps://discord.gg/SyQhwe2'
+  - '&8&l|'
+  - '&8&l|::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::>'
