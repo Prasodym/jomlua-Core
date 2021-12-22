@@ -1,6 +1,6 @@
 # Jomlua Core Plugin
 
-[![pipeline status](https://git.jomlua.de/Prasodym/jomluacore-paper/badges/master/pipeline.svg)](https://git.jomlua.de/Prasodym/jomluacore-paper/-/commits/master)[![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/SyQhwe2)
+[![pipeline status](https://git.jomlua.de/Prasodym/jomluacore-paper/badges/master/pipeline.svg)](https://git.jomlua.de/Prasodym/jomluacore-paper/-/commits/master)[![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/6dj6sBX)
 
 - [Beschreibung](#Bescreibung)
 - [Befehle & Permissions](#befehle)
