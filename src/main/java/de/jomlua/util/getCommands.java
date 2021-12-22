@@ -70,7 +70,7 @@ public class getCommands{
         command("kit", new CMDKits());
         command("kits", new CMDKits());
         command("speed", new CMDSpeed());
-        command("eheads", new CMDHead());
+        //command("eheads", new CMDHead()); Fix PlayerProfile
         command("day", new CMDTime());
         command("nigth" , new CMDTime());
         command("tpo",new CMDTp());

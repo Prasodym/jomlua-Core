@@ -60,7 +60,8 @@ public class CheckInv {
         /**
          * TODO: Slot 10, playerskull returned material.
          */
-        inventory.setItem(10, PlayerSkull.itemFromName(ReadSQL.getPlayername(uuid)));
+
+        inventory.setItem(10, new ItemBuilder(Material.SKELETON_SKULL).setAmount(1).setName("§4" + ReadSQL.getPlayername(uuid)).build());
 
 
         inventory.setItem(12, new ItemBuilder(Material.COBWEB).setAmount(1).setName("§eUUID").setLore("§c" + uuid).build());

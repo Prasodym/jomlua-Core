@@ -55,9 +55,9 @@ public class JomluaCore extends JavaPlugin {
     public static Map<Player, Long> playerLogTimeMap = new HashMap<>();
     public static HashMap<String, String> GivePlayer = new HashMap<>();
 
-    Logger log = Logger.getLogger(ChatOutput.);
+    Logger log = Logger.getLogger(ChatOutput.PREFIXC.getText());
     public static Scoreboard score;
-
+    public String serverversion = Bukkit.getVersion().toString();
     @Override
     public void onEnable() {
 
@@ -69,11 +69,16 @@ public class JomluaCore extends JavaPlugin {
 
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§eDas Plugin Startet jetzt..");
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "");
-        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3   |   |――――|");
-        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3   |   | [] |");
-        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3|__|   |____|");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3      _  _  _                             _  _                            ");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3     (_)(_)(_)                           (_)(_)                           ");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3        (_)    _  _  _      _  _   _  _     (_)   _         _     _  _  _ ");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3        (_) _ (_)(_)(_) _  (_)(_)_(_)(_)    (_)  (_)       (_)   (_)(_)(_) _");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3        (_)(_)         (_)(_)   (_)   (_)   (_)  (_)       (_)    _  _  _ (_)");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3 _      (_)(_)         (_)(_)   (_)   (_)   (_)  (_)       (_)  _(_)(_)(_)(_)");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3(_)  _  (_)(_) _  _  _ (_)(_)   (_)   (_) _ (_) _(_)_  _  _(_)_(_)_  _  _ (_)_ ");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§3 (_)(_)(_)    (_)(_)(_)   (_)   (_)   (_)(_)(_)(_) (_)(_)(_) (_) (_)(_)(_)  (_)");
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "");
-        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§2Version §c1.6.8");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§2Version: §c1.6.8 | §eServerversion: §c" + serverversion);
         plugin = this;
 
         MySQLConfig file = new MySQLConfig();

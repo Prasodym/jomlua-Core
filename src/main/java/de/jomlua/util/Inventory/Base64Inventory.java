@@ -1,8 +1,7 @@
 package de.jomlua.util.Inventory;
 
-import com.google.gson.JsonObject;
+
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.libs.org.apache.commons.io.output.ByteArrayOutputStream;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
@@ -11,6 +10,7 @@ import org.bukkit.util.io.BukkitObjectOutputStream;
 import org.yaml.snakeyaml.external.biz.base64Coder.Base64Coder;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class Base64Inventory {
@@ -48,6 +48,7 @@ public class Base64Inventory {
     public static String itemStackArrayToBase64(ItemStack[] items) throws IllegalStateException {
         try {
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
             BukkitObjectOutputStream dataOutput = new BukkitObjectOutputStream(outputStream);
 
             // Write the size of the inventory

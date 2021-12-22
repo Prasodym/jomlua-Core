@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="jomlua-core">
+    <output-path>$USER_HOME$/Desktop/Plugin Etwiklung/Server/plugins</output-path>
+    <root id="archive" name="jomlua-core.jar">
+      <element id="module-output" name="JomluaCore" />
+    </root>
+  </artifact>
+</component>

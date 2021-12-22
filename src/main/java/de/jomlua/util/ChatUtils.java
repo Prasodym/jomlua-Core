@@ -145,15 +145,19 @@ public class ChatUtils {
 
 
     public static String setHexColor(String msg){
-        // ChatUtils.setHexColor("")
-        Pattern pattern = Pattern.compile("#[a-fa-f0-9]{6}");
+        
+        if (Bukkit.getVersion().contains("1.16")){
+            // ChatUtils.setHexColor("")
+            Pattern pattern = Pattern.compile("#[a-fa-f0-9]{6}");
 
-        Matcher match = pattern.matcher(msg);
-        while (match.find()){
-            String color = msg.substring(match.start(), match.end());
-            msg = msg.replace(color, net.md_5.bungee.api.ChatColor.of(color) + "");
-            match = pattern.matcher(msg);
+            Matcher match = pattern.matcher(msg);
+            while (match.find()){
+                String color = msg.substring(match.start(), match.end());
+                msg = msg.replace(color, net.md_5.bungee.api.ChatColor.of(color) + "");
+                match = pattern.matcher(msg);
+            }
         }
+
         return net.md_5.bungee.api.ChatColor.translateAlternateColorCodes('&',msg);
     }
 

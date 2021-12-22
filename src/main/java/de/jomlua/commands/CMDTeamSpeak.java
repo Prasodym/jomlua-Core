@@ -1,6 +1,8 @@
 package de.jomlua.commands;
 
+import de.jomlua.JomluaCore;
 import de.jomlua.util.ChatOutput;
+import de.jomlua.util.ChatUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -25,7 +27,7 @@ public class CMDTeamSpeak implements CommandExecutor{
                 String[] s = ChatOutput.TEAMSPEAK.getText().split("%n");
                 for (String m : s){
                     
-                    player.sendMessage(ChatOutput.PREFIX.getText() + m);
+                    player.sendMessage(ChatOutput.PREFIX.getText() + ChatUtils.setHexColor(JomluaCore.plugin.getConfig().getString("adress-ts3")));
                 }
 
             }

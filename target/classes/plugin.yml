@@ -1,0 +1,143 @@
+name: JomluaCore
+version: 1.5.3
+main: de.jomlua.JomluaCore
+api-version: 1.13
+authors: [Prasodym]
+website: https://jomlua.de
+
+commands:
+  money:
+  heal:
+    description: Dieses command heilt dir.
+  m:
+    description: Sende eine private nachricht
+  r:
+    description: Antworte auf nachrichten
+  fly:
+    description: Fliegen aktivieren.
+  setspawn:
+    description: Setze ein neuen Spawn punkt.
+  spawn:
+    description: Telepotiere sich zum anfangs punkt.
+  setfarmwelt:
+    description: Setze ein neuen punkt in der Farmwelt.
+  farmwelt:
+    description: Teleportiere dich zur Farmwelt.
+  gm:
+    description: Spielmodus ändern.
+  killme:
+    description: Töte dich selber
+    aliases: [km]
+  iname:
+    description: Ändert den namen des items in der Hand.
+  tp:
+    description: Teleportiert dich zum anderen Spieler.
+  tpo:
+    description: Teleportoiere dich zu einen bestimmten punkt
+  tphere:
+    description: Teleportiere ein Spieler zu dir.
+  load:
+    description: Laded alle plugins neu.
+  back:
+    description: Teleportiere dich zum letzten Todespunkt.
+  plugins:
+    description: Plungins List
+    aliases: [pl]
+  onlinetime:
+    description: Schaue deine Spielzeit an.
+    aliases: [ptime]
+  god:
+    aliases: [godmode]
+    description: Aktiviere unsterblichkeit.
+  home:
+    description: Teleportiere dich zum Home.
+  homes:
+    description: Listet deine Homes auf
+  delhome:
+    description: Löscht dein Home
+  ahome:
+    description: Teleportiere dich zum anderen Spielerhome
+    aliases: [ah]
+  adebug:
+    description: Admin debug tool
+  invsee:
+    description: Überprüfe Spieler Inventar
+  sethome:
+    description: Setze dein Zuhause.
+  maxworld:
+    description: Weltmanager.
+    aliases: [mw]
+  set:
+    description: Setze neue blöcke.
+  pleace:
+    description: Spawne Entytis
+  wand:
+    description: Give you wooden axt.
+  tpa:
+    description: Schicke eine Teleportanfrage raus.
+  tpaccept:
+    description: Eine TPA anfrage annehmen.
+  tpadeny:
+    description: eine tpaanfrage ablehnen.
+  tpahere:
+    description: tpaanfrage zu dir
+  rtp:
+    description: Teleportiert dich an einer zufällige stellen
+  warp:
+    description: Teleportiert dich zum Nether
+  setwarp:
+    description: setze einen neuen Warp
+  delwarp:
+    description: Lösche warps
+  warps:
+    description: Listet verfügbare warps auf
+  setwb:
+    description: Worldborder ändern
+  discord:
+    description: Zeigt die den einladungs ling für Discord
+    aliases: [dc]
+  jcreload:
+    description: Reloaded plugin
+  teamspeak:
+    description: Zeigt dir die ip vom Teamspeak Server
+    aliases: [ts]
+  endsee:
+    description: Spieler endercheast sehen
+    aliases: [es]
+  iteminfo:
+    description: Item info in der hand sehenreloa
+  sun:
+    description: Wetter ändern zu Sonnenschein
+  storm:
+    description: Wetter ändern zu Regen und gewitter.
+  kick:
+    description: Kicke ein spieler vom Server.
+  kickall:
+    description: Kicke alle spieler vom Server.
+  ban:
+    description: Banne ein Spieler permanent.
+  tempban:
+    description: Banne ein Spieler vorübergehend.
+  check:
+    description: Überprüfe ob der Spieler gebannt wurde.
+  unban:
+    description: Entbanne einen Spieler.
+  createkit:
+    description: Speicher ein kit mit dein Inventarcontent.
+  kit:
+    description: Hole dir ein Kit
+  kits:
+     description: Listet alle kits auf
+  speed:
+    description: Erhöhe deine Flug/Lauf-geschwindigkeit.
+  eheads:
+    description: Bekommen einen Kopf
+  day:
+    description: Setze die zeit auf Tag.
+  nigth:
+    description: Setze die zeit auf Nacht.
+
+
+
+
+

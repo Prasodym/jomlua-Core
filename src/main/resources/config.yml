@@ -37,6 +37,8 @@ server-motd:
   - '&aI am usage JomluaCore'
 #Enabled Motd messages
 motd: true
+#Address for /ts3 or /teamspeak command
+adress-ts3: '&4&lts.ender.io'
 motd-msg:
   - '&8&l|:::::::::::::::::::::::::::: &3&lJo&amlua &3&lVa&a&lnillaserver &8&l:::::::::::::::::::::::::::::>'
   - '&8&l|'

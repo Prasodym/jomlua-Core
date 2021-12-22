@@ -30,14 +30,14 @@ public class CMDHead implements CommandExecutor {
                 OfflinePlayer targetPlayer = (OfflinePlayer) Bukkit.getOfflinePlayer(args[0]) ;
 
                 player.sendMessage(ChatOutput.PREFIX.getText() + "Loading Skindata...");
-                player.setItemInHand(PlayerSkull.itemFromName(targetPlayer.getName()));
+                //player.setItemInHand(PlayerSkull.itemFromName(targetPlayer.getName()));
 
                 player.sendMessage(ChatOutput.PREFIX.getText() + "Du hast den Kopf von §e" + targetPlayer.getName() + " §8bekommen.");
                 return true;
             }
             //player.getInventory().addItem(PlayerSkull.itemFromUuid(player.getUniqueId().toString()));
             player.sendMessage(ChatOutput.PREFIX.getText() + "Du hast deinen Kopf erhalten");
-            player.setItemInHand(PlayerSkull.itemFromName(player.getName()));
+            //player.setItemInHand(PlayerSkull.itemFromName(player.getName()));
             return true;
         }
 

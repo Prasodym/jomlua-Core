@@ -31,7 +31,11 @@ public class ChatListener implements Listener {
             if (player.hasPermission("jomlua.color")){
                 e.setFormat(ChatUtils.setHexColor("&7[&3" + x + "&7]" + prefix + player.getDisplayName()+":&a ") + ChatUtils.setHexColor(e.getMessage()));
             } else {
-                e.setFormat(ChatUtils.setHexColor("&7[&3" + x + "&7]" + prefix + player.getDisplayName()+":&a ") + e.getMessage());
+                if (player.isOp()){
+                    e.setFormat(ChatUtils.setHexColor("&7[&3" + x + "&7]" + prefix + player.getDisplayName()+":&a ") + e.getMessage());
+                }else{
+                    e.setFormat(ChatUtils.setHexColor("&7[&4Operator&7]&7[&3" + x + "&7]" + prefix + player.getDisplayName()+":&a ") + e.getMessage());
+                }
             }
 
     }

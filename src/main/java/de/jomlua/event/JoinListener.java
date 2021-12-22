@@ -7,7 +7,7 @@ import de.jomlua.util.ChatOutput;
 
 import de.jomlua.util.ChatUtils;
 import de.jomlua.util.Inventory.SynInventory;
-import net.minecraft.server.v1_16_R3.ServerPing;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
