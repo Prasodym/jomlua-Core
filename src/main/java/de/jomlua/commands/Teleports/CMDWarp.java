@@ -59,6 +59,7 @@ public class CMDWarp implements CommandExecutor, TabCompleter {
                         player.sendMessage("§7- §e/§bwarp §c[name]");
                     }
                 }
+
                 if (command.getName().equalsIgnoreCase("setwarp")){
                     if (player.hasPermission("jomlua.setwarp")){
                         if (args.length == 1) {
