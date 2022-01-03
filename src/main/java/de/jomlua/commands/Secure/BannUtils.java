@@ -3,13 +3,10 @@ package de.jomlua.commands.Secure;
 
 import de.jomlua.mysql.MySQL;
 import org.bukkit.Bukkit;
-import org.bukkit.OfflinePlayer;
-
-
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.Date;
 import java.util.List;
 
@@ -21,7 +18,7 @@ public class BannUtils {
      * @param player Spieler getName
      * @param reason Grund des Banns
      * @param seconds Dauer des Banns
-     *                Banne einen Spieler Vom Server (SQL)
+     * Ban einen Spieler Vom Server (SQL)
      */
     public static void ban(String law,String player, String uuid, String reason, int seconds){
         long end = 0;

@@ -26,13 +26,10 @@ public class MySQL<connection> {
             try {
                 // con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database + "?autoReconnect=true&useUnicode=yes", user, password);
                 con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database + "?useJDBCCompliantTimezoneShift=true&&serverTimezone=UTC&&useUnicode=true&autoReconnect=true", user, password);
-
-
             } catch (SQLException e) {
                 Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§4ERROR | Mysql:§c the login or connection is impossible!");
                 Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§4ERROR | Mysql§c Please check again your config and that the sql server is accessible!");
                 e.printStackTrace();
-
             }
         }else{
             Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',ChatOutput.PREFIXC.getText()) + "§4Mysql:§c the login or connection is impossible!");
