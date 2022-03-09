@@ -19,7 +19,7 @@ IMG HERE
 
 
 ---
-Dies ein Bukkit/Spigot Plugin was viele Standard Befehle beinheitet.
+Dies ein Bukkit/Spigot Plugin was viele Standard Befehle beinhalten.
 Eine abgespeckte version von Essentials, Es beinhaltet fast alles was für Täglichen gebrauch zu gebrauchen ist. Es beinheltet einen Blockcounter, Spielzeit und Spieler liste über Mysql-Datenbank.
 
 - :white_check_mark: - Require Mysql, MariaDB 
